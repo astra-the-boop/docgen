@@ -176,7 +176,7 @@ hr{
     overflow-y: hidden;
 }
 
-#top-left-container{
+.header-container{
     margin-left: 3rem;
 }
 

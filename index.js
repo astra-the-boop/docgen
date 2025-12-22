@@ -32,6 +32,7 @@ function updatePreview(){
 document.addEventListener('DOMContentLoaded', () => {
     const bottomRow = document.getElementById('gay-homosexual-bottom-grrr');
     const bottomRowContent = document.getElementById("bottom-row");
+    const bottomRowLabel = document.getElementById("label-bottom");
 
     fontSelect.addEventListener('change', () => {
         updatePreview();
@@ -61,9 +62,11 @@ document.addEventListener('DOMContentLoaded', () => {
         if(bottomRow.value === "date"){
             bottomRowContent.type = "date";
             bottomRowContent.style.width = "auto";
+            bottomRowLabel.innerText = "Date of Document: ";
         }else{
             bottomRowContent.type = "text";
             bottomRowContent.style.width = "18rem";
+            bottomRowLabel.innerText = "Sub-Jurisdiction: ";
         }
     })
 })
