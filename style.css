@@ -56,19 +56,24 @@ body{
     margin: 0;
     color: white;
     text-align: center;
-    padding: 1rem 3rem 0.5rem 3rem;
-    font-size: 1.25rem;
+
+    font-size: 1rem;
     font-weight: bold;
+}
+
+#disclaimer{
+    padding: 1rem 3rem 1rem 3rem;
 }
 
 #logo{
     display: flex;
     justify-content: center;
-    margin: 1rem;
+    background-color: var(--dark);
+    padding: 1rem;
 }
 
 #header-flag{
-    width: 15rem;
+    width: 10rem;
     image-rendering: pixelated;
 }
 
@@ -80,10 +85,39 @@ body{
     background-color: var(--muted-background);
     color: var(--muted);
     text-align: center;
-    font-size: 1.25rem;
+    font-size: 1rem;
     padding: 2rem 20rem 2rem 20rem;
 }
 
 h1{
-    font-size: 4.5rem;
+    font-size: 3.5rem;
+}
+
+#bodier-body{
+    margin: 0 10rem 0 3rem;
+    font-size: 1.35rem;
+}
+
+#main-container{
+    background-color: var(--muted-background);
+    margin: 3rem 2rem;
+    padding: 3rem;
+}
+
+h3{
+    font-size: 1.3rem;
+}
+
+select{
+    appearance: none;
+    border: 2px solid var(--muted);
+    font-size: 1rem;
+}
+
+#font-select{
+    font-family: "Times New Roman", times, serif;
+}
+
+#font-containest{
+    display: flex;
 }
