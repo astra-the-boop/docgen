@@ -1,6 +1,8 @@
+const fontSelect = document.getElementById('font-select');
+const fontSize = document.getElementById('font-size');
+
 function updatePreview(){
     const preview = document.getElementById('preview-box');
-    const fontSelect = document.getElementById('font-select');
 
     switch(fontSelect.value) {
         case "times":
@@ -13,11 +15,11 @@ function updatePreview(){
             preview.style.fontFamily = `"Phantom Sans", sans-serif`;
             break;
     }
+
+    preview.style.fontSize = fontSize.value + "pt";
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    const fontSelect = document.getElementById('font-select');
-
     fontSelect.addEventListener('change', () => {
         updatePreview();
         switch(fontSelect.value) {
@@ -31,5 +33,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 fontSelect.style.fontFamily = `"Phantom Sans", sans-serif`;
                 break;
         }
+    })
+
+    fontSize.addEventListener('change', () => {
+        updatePreview();
     })
 })

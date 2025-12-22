@@ -10,7 +10,8 @@
     --cyan:#5bc0de;
     --blue:#338eda;
     --purple:#a633d6;
-    --muted:#8492a6
+    --muted:#8492a6;
+    --preview-background: #ffffff;
 }
 
 @font-face {
@@ -120,7 +121,7 @@ h3{
     font-size: 1.3rem;
 }
 
-select, input{
+select, input:not[type="checkbox"]{
     appearance: none;
     border: 2px solid var(--muted);
     font-size: 1rem;
@@ -155,7 +156,8 @@ select, input{
 
 #preview-box{
     font-family: "Times New Roman", times, serif;
-    background-color: var(--white);
+    font-size: 12pt;
+    background-color: var(--preview-background);
     width: 26rem;
     height: 8rem;
     padding: 1rem;
