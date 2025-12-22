@@ -1,5 +1,7 @@
 const fontSelect = document.getElementById('font-select');
 const fontSize = document.getElementById('font-size');
+const darkMode = document.getElementById('dark-mode');
+const root = document.documentElement;
 
 function updatePreview(){
     const preview = document.getElementById('preview-box');
@@ -14,6 +16,14 @@ function updatePreview(){
         case "phantom":
             preview.style.fontFamily = `"Phantom Sans", sans-serif`;
             break;
+    }
+
+    if(!darkMode.checked){
+        root.style.setProperty("--text", "#000");
+        root.style.setProperty("--preview-background", "#fff");
+    }else{
+        root.style.setProperty("--text", "#fff");
+        root.style.setProperty("--preview-background", "#000");
     }
 
     preview.style.fontSize = fontSize.value + "pt";
@@ -36,6 +46,10 @@ document.addEventListener('DOMContentLoaded', () => {
     })
 
     fontSize.addEventListener('change', () => {
+        updatePreview();
+    })
+
+    darkMode.addEventListener('change', () => {
         updatePreview();
     })
 })
