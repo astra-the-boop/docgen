@@ -175,3 +175,11 @@ hr{
     padding: 1rem;
     overflow-y: hidden;
 }
+
+#top-left-container{
+    margin-left: 3rem;
+}
+
+#jurisdiction{
+    width: 22rem;
+}
