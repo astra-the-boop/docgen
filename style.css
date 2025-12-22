@@ -44,6 +44,18 @@
     font-display: swap;
 }
 
+@font-face {
+    font-family: "JetBrains Mono";
+    src: url("fonts/fonts/variable/JetBrainsMono[wght].ttf") format("truetype-variations");
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "JetBrains Mono";
+    src: url("fonts/fonts/variable/JetBrainsMono-Italic[wght].ttf") format("truetype-variations");
+    font-style: italic;
+}
+
 body{
     padding: 0;
     margin: 0;
@@ -108,16 +120,44 @@ h3{
     font-size: 1.3rem;
 }
 
-select{
+select, input{
     appearance: none;
     border: 2px solid var(--muted);
     font-size: 1rem;
+    height: 2rem;
+    padding: 0 0.6rem;
+    line-height: 2rem;
+    box-sizing: border-box;
 }
 
 #font-select{
     font-family: "Times New Roman", times, serif;
 }
 
+#font-size{
+    width: 4rem
+}
+
+#font-size-pt{
+    font-size: 1.2rem
+}
+
 #font-containest{
     display: flex;
+    gap: 1rem;
+    width: 30rem;
+}
+
+#containing-container{
+    display: flex;
+    gap: 2rem;
+}
+
+#preview-box{
+    font-family: "Times New Roman", times, serif;
+    background-color: var(--white);
+    width: 26rem;
+    height: 8rem;
+    padding: 1rem;
+    overflow-y: hidden;
 }
