@@ -30,6 +30,9 @@ function updatePreview(){
 }
 
 document.addEventListener('DOMContentLoaded', () => {
+    const bottomRow = document.getElementById('gay-homosexual-bottom-grrr');
+    const bottomRowContent = document.getElementById("bottom-row");
+
     fontSelect.addEventListener('change', () => {
         updatePreview();
         switch(fontSelect.value) {
@@ -51,5 +54,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
     darkMode.addEventListener('change', () => {
         updatePreview();
+    })
+
+    bottomRow.addEventListener('change', () => {
+        console.log(bottomRow.value);
+        if(bottomRow.value === "date"){
+            bottomRowContent.type = "date";
+            bottomRowContent.style.width = "auto";
+        }else{
+            bottomRowContent.type = "text";
+            bottomRowContent.style.width = "18rem";
+        }
     })
 })
