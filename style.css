@@ -229,8 +229,21 @@ select{
     width: 80%;
 }
 
-#cunt-preview{
+#cuntier-preview{
     font-family: "Times New Roman", times, serif;
     color: var(--text);
     background: var(--preview-background);
+    padding: 1rem 2rem;
+    border: 2px solid var(--muted);
+    width: 40rem;
+}
+
+#cunt-header{
+    display: flex;
+    gap: 2rem;
+}
+
+#top-left{
+    width: 18rem;
+    text-align: center;
 }

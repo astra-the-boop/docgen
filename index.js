@@ -3,10 +3,11 @@ const fontSize = document.getElementById('font-size');
 const darkMode = document.getElementById('dark-mode');
 const root = document.documentElement;
 const content = document.getElementById('content');
-const mainPreview = document.getElementById('cunt-preview');
+const mainPreview = document.getElementById('cuntier-preview');
 
 marked.setOptions({
-    sanitize: true
+    sanitize: true,
+    breaks: true
 });
 
 function updatePreview(){
@@ -36,7 +37,7 @@ function updatePreview(){
     }
 
     preview.style.fontSize = fontSize.value + "pt";
-    mainPreview.style.fontSize = fontSize.value + "pt";
+    mainPreview.style.fontSize = (fontSize.value - 2) + "pt";
 }
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -80,8 +81,26 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     })
 
+    document.getElementById("jurisdiction").addEventListener('input', () => {
+        document.getElementById("jurisdiction-preview").innerText = document.getElementById("jurisdiction").value;
+    });
+
+    document.getElementById("bottom-row").addEventListener('input', () => {
+        if (document.getElementById("gay-homosexual-bottom-grrr").value === "date") {
+            const date = new Date(document.getElementById("bottom-row").value);
+            document.getElementById("bottomrow-preview").innerText = document.getElementById("bottomrow-preview").innerText = date.toLocaleString("en-GB", {
+                weekday: "long",
+                year: "numeric",
+                month: "long",
+                day: "numeric"
+            });
+        } else {
+            document.getElementById("bottomrow-preview").innerText = document.getElementById("bottom-row").value;
+        }
+    });
+
     content.addEventListener('input', () => {
         const md = content.value;
-        mainPreview.innerHTML = marked.parse(md);
+        document.getElementById("cunt-preview").innerHTML = marked.parse(md);
     })
 })
