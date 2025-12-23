@@ -107,8 +107,31 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById("title-preview").innerText = `"${document.getElementById("title").value}"`;
     })
 
+    document.getElementById("authors").addEventListener('input', () => {
+        document.getElementById("authors-preview").innerText = document.getElementById("authors").value;
+    })
+
+    document.getElementById("secondary-for").addEventListener('input', () => {
+        document.getElementById("the-fuckassed-thing").innerText = document.getElementById("secondary-for").value;
+    })
+
+    document.getElementById("secondary").addEventListener('input', () => {
+        document.getElementById("the-other-fuckassed-thing").innerText = document.getElementById("secondary").value;
+    })
+
+    document.getElementById("date-grrr").addEventListener('change', () => {
+        const date = new Date(document.getElementById("date-grrr").value);
+        document.getElementById("date-preview").innerText = date.toLocaleString("en-GB", {
+            weekday: "long",
+            year: "numeric",
+            month: "long",
+            day: "numeric"
+        });
+    })
+
     content.addEventListener('input', () => {
         const md = content.value;
         document.getElementById("cunt-preview").innerHTML = marked.parse(md);
+        mainPreview.style.fontSize = (fontSize.value - 2) + "pt";
     })
 })

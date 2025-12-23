@@ -230,6 +230,9 @@ select{
 }
 
 #cuntier-preview{
+    margin: auto auto;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
     font-family: "Times New Roman", times, serif;
     color: var(--text);
     background: var(--preview-background);
@@ -258,4 +261,32 @@ select{
 
 .default-preview{
     font-size: 0.8rem;
+}
+
+#preview-box h1 {
+    font-size: 15pt;
+}
+
+#preview-box h2 {
+    font-size: 13pt;
+}
+
+#preview-box h3 {
+    font-size: 10pt;
+}
+
+#preview-box p {
+    font-size: 6pt;
+}
+
+.centered{
+    text-align: center;
+}
+
+#the-actual-real-legit-thing{
+    display: none;
+    visibility: hidden;
+    width: 100%;
+    background-color: var(--preview-background);
+    color: var(--text);
 }
