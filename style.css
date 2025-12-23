@@ -120,6 +120,7 @@ h1{
     background-color: var(--muted-background);
     margin: 3rem 2rem;
     padding: 3rem;
+    max-width: 60rem;
 }
 
 h3, label{
@@ -182,4 +183,38 @@ hr{
 
 #jurisdiction{
     width: 22rem;
+}
+
+select{
+    font-family: 'Phantom Sans', sans-serif;
+}
+
+#title-container, #other-stuff-idk{
+    width: 100%;
+    text-align: center;
+}
+
+#i-cant-be-bothered-anymore{
+    margin-top: 2rem;
+    flex-direction: row;
+}
+
+#containing-container, #doc-content-container{
+    flex-wrap: wrap;
+}
+
+#document-type{
+    width: 20rem;
+}
+
+#title{
+    width: 25rem;
+}
+
+#authors, #secondary{
+    width: 15rem;
+}
+
+#secondary-for{
+    width: 6rem;
 }
