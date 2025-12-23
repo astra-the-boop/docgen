@@ -227,3 +227,9 @@ select{
 #content {
     width: 80%;
 }
+
+#cunt-preview{
+    font-family: "Times New Roman", times, serif;
+    color: var(--text);
+    background: var(--preview-background);
+}

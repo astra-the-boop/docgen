@@ -5,18 +5,25 @@ const root = document.documentElement;
 const content = document.getElementById('content');
 const mainPreview = document.getElementById('cunt-preview');
 
+marked.setOptions({
+    sanitize: true
+});
+
 function updatePreview(){
     const preview = document.getElementById('preview-box');
 
     switch(fontSelect.value) {
         case "times":
             preview.style.fontFamily = `"Times New Roman", times, serif`;
+            mainPreview.style.fontFamily = `"Times New Roman", times, serif`;
             break;
         case "jetbrains":
             preview.style.fontFamily = `"JetBrains Mono", monospace`;
+            mainPreview.style.fontFamily = `"JetBrains Mono", monospace`;
             break;
         case "phantom":
             preview.style.fontFamily = `"Phantom Sans", sans-serif`;
+            mainPreview.style.fontFamily = `"Phantom Sans", sans-serif`;
             break;
     }
 
@@ -29,6 +36,7 @@ function updatePreview(){
     }
 
     preview.style.fontSize = fontSize.value + "pt";
+    mainPreview.style.fontSize = fontSize.value + "pt";
 }
 
 document.addEventListener('DOMContentLoaded', () => {
