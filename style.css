@@ -175,6 +175,7 @@ hr{
     height: 8rem;
     padding: 1rem;
     overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 .header-container{
