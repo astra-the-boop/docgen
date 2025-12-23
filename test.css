@@ -1,0 +1,19 @@
+body{
+    background-color: #999;
+}
+
+div{
+    background-color: white;
+    width: 10rem;
+    height: 20rem;
+}
+
+@media print{
+    body *{
+        display: none;
+    }
+
+    #div{
+        display: block;
+    }
+}
