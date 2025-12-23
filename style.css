@@ -218,3 +218,12 @@ select{
 #secondary-for{
     width: 6rem;
 }
+
+#please-give-me-my-visa{
+    text-align: center;
+    margin-top: 3rem;
+}
+
+#content {
+    width: 80%;
+}

@@ -2,6 +2,8 @@ const fontSelect = document.getElementById('font-select');
 const fontSize = document.getElementById('font-size');
 const darkMode = document.getElementById('dark-mode');
 const root = document.documentElement;
+const content = document.getElementById('content');
+const mainPreview = document.getElementById('cunt-preview');
 
 function updatePreview(){
     const preview = document.getElementById('preview-box');
@@ -68,5 +70,10 @@ document.addEventListener('DOMContentLoaded', () => {
             bottomRowContent.style.width = "18rem";
             bottomRowLabel.innerText = "Sub-Jurisdiction: ";
         }
+    })
+
+    content.addEventListener('input', () => {
+        const md = content.value;
+        mainPreview.innerHTML = marked.parse(md);
     })
 })
