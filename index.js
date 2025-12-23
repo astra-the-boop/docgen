@@ -99,6 +99,8 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+
+
     content.addEventListener('input', () => {
         const md = content.value;
         document.getElementById("cunt-preview").innerHTML = marked.parse(md);
