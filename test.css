@@ -10,10 +10,10 @@ div{
 
 @media print{
     body *{
-        display: none;
+        visibility: hidden;
     }
 
     #div{
-        display: block;
+        visibility: visible;
     }
 }
