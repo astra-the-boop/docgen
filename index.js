@@ -129,6 +129,26 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     })
 
+    document.getElementById("hc").addEventListener('change', () => {
+        if(document.getElementById("hc").value === "democratic"){
+            document.getElementById("drhc").innerText = "Democratic Republic of Hack Club";
+            document.getElementById("urhc").innerText = "Democratic Republic of Hack Club"
+        }else{
+            document.getElementById("drhc").innerText = "United Republic of Hack Club";
+            document.getElementById("urhc").innerText = "United Republic of Hack Club"
+        }
+    })
+
+    document.getElementById("orph").addEventListener('change', () => {
+        if(document.getElementById("orph").value === "orpheus"){
+            document.getElementById("lesbianism").innerText = "In Orpheus We Trust";
+            document.getElementById("i-love-my-wife").innerText = "In Orpheus We Trust"
+        }else{
+            document.getElementById("lesbianism").innerText = "In Orpheo Confidimus";
+            document.getElementById("i-love-my-wife").innerText = "In Orpheo Confidimus"
+        }
+    })
+
     content.addEventListener('input', () => {
         const md = content.value;
         document.getElementById("cunt-preview").innerHTML = marked.parse(md);

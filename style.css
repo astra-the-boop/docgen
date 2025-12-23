@@ -284,9 +284,29 @@ select{
 }
 
 #the-actual-real-legit-thing{
-    display: none;
-    visibility: hidden;
+    /*display: none;*/
+    /*visibility: hidden;*/
+    display: flex;
+    font-family: "Times New Roman", times, serif;
     width: 100%;
     background-color: var(--preview-background);
     color: var(--text);
+    margin: auto auto;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    background: var(--preview-background);
+    padding: 3rem 2rem;
+    border: 2px solid var(--muted);
+    justify-content: center;
+    align-items: center;
+}
+
+#real-cunt-header{
+    font-size: 1rem;
+    display: flex;
+    gap: 30%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%
 }
