@@ -99,7 +99,13 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+    document.getElementById("document-type").addEventListener('input', () => {
+        document.getElementById("doc-type-preview").innerText = document.getElementById("document-type").value.toUpperCase();
+    })
 
+    document.getElementById("title").addEventListener('input', () => {
+        document.getElementById("title-preview").innerText = `"${document.getElementById("title").value}"`;
+    })
 
     content.addEventListener('input', () => {
         const md = content.value;

@@ -233,17 +233,29 @@ select{
     font-family: "Times New Roman", times, serif;
     color: var(--text);
     background: var(--preview-background);
-    padding: 1rem 2rem;
+    padding: 3rem 2rem;
     border: 2px solid var(--muted);
     width: 40rem;
 }
 
 #cunt-header{
     display: flex;
-    gap: 2rem;
+    gap: 3rem;
+    width: 36rem;
+    margin: auto auto;
 }
 
-#top-left{
+#top-left, #top-right{
     width: 18rem;
     text-align: center;
+}
+
+#title-er{
+    font-weight: bold;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.default-preview{
+    font-size: 0.8rem;
 }
