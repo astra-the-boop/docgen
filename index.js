@@ -21,14 +21,17 @@ function updatePreview(){
         case "times":
             preview.style.fontFamily = `"Times New Roman", times, serif`;
             mainPreview.style.fontFamily = `"Times New Roman", times, serif`;
+            document.getElementById("if-anyone-finds-this-div-tell-my-lovely-wife-hana-that-i-love-her-a-lot-less-than-3").style.fontFamily = `"Times New Roman", times, serif`;
             break;
         case "jetbrains":
             preview.style.fontFamily = `"JetBrains Mono", monospace`;
             mainPreview.style.fontFamily = `"JetBrains Mono", monospace`;
+            document.getElementById("if-anyone-finds-this-div-tell-my-lovely-wife-hana-that-i-love-her-a-lot-less-than-3").style.fontFamily = `"JetBrains Mono", monospace`;
             break;
         case "phantom":
             preview.style.fontFamily = `"Phantom Sans", sans-serif`;
             mainPreview.style.fontFamily = `"Phantom Sans", sans-serif`;
+            document.getElementById("if-anyone-finds-this-div-tell-my-lovely-wife-hana-that-i-love-her-a-lot-less-than-3").style.fontFamily = `"Phantom Sans", sans-serif`;
             break;
     }
 
@@ -42,6 +45,7 @@ function updatePreview(){
 
     preview.style.fontSize = fontSize.value + "pt";
     mainPreview.style.fontSize = (fontSize.value - 2) + "pt";
+    document.getElementById("if-anyone-finds-this-div-tell-my-lovely-wife-hana-that-i-love-her-a-lot-less-than-3").style.fontSize = fontSize.value + "pt";
 }
 
 document.addEventListener('DOMContentLoaded', () => {
