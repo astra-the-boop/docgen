@@ -172,5 +172,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const md = content.value;
         document.getElementById("cunt-preview").innerHTML = marked.parse(md);
         mainPreview.style.fontSize = (fontSize.value - 2) + "pt";
+        document.getElementById("if-anyone-finds-this-div-tell-my-lovely-wife-hana-that-i-love-her-a-lot-less-than-3").innerHTML = marked.parse(md);
+        document.getElementById("if-anyone-finds-this-div-tell-my-lovely-wife-hana-that-i-love-her-a-lot-less-than-3").style.fontSize = fontSize.value() + "pt";
     })
 })

@@ -239,6 +239,8 @@ select{
     padding: 3rem 2rem;
     border: 2px solid var(--muted);
     width: 40rem;
+    height: 56.56rem;
+    overflow-y: scroll;
 }
 
 #cunt-header{
@@ -309,10 +311,11 @@ select{
     justify-content: center;
     align-items: center;
     text-align: center;
-    width: 100%
+    width: 100%;
 }
 
 #real-title-thing-container{
+    font-size: 1.1rem;
     width: 100%;
     margin-top: 5rem;
     align-items: center;
