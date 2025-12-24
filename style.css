@@ -361,7 +361,7 @@ select{
 
 #the-actual-real-legit-thing{
     /*display: none;*/
-    visibility: hidden;
+    /*visibility: hidden;*/
     font-family: "Times New Roman", times, serif;
     width: 100%;
     background-color: var(--preview-background);
@@ -374,7 +374,7 @@ select{
     justify-content: center;
     margin: 0;
     align-items: center;
-    border: 2px solid var(--muted);
+    /*border: 2px solid var(--muted);*/
 }
 
 #real-cunt-header{
