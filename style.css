@@ -483,7 +483,6 @@ button.cta {
         width: 50%;
         text-align: center;
         vertical-align: top;
-        border: 1px solid var(--muted);
     }
 
     #real-title-thing-container, #real-document-type{
