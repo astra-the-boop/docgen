@@ -459,16 +459,23 @@ button.cta {
     );
 }
 
+@page{
+    size: A4;
+    margin: 20mm;
+}
+
 @media print{
-    body *{
-        display: none;
-        visibility: hidden;
+
+
+    body > *{
+        display: none !important;
     }
 
     #real-cunt-header{
-        flex-wrap: nowrap;
-        gap: 4cm;
         display: table;
+        width: 100%;
+        table-layout: fixed;
+        flex-wrap: nowrap;
     }
 
     #real-top-left, #real-top-right{
@@ -476,14 +483,23 @@ button.cta {
         width: 50%;
         text-align: center;
         vertical-align: top;
+        border: 1px solid var(--muted);
     }
 
     #real-title-thing-container, #real-document-type{
         white-space: nowrap;
     }
 
+    #the-actual-real-legit-thing{
+        display: block !important;
+
+        width: 210mm;
+        margin: 0 auto;
+        box-sizing: border-box;
+        padding: 1.5cm;
+    }
+
     #the-actual-real-legit-thing, #the-actual-real-legit-thing *{
-        display: block;
-        visibility: visible
+        visibility: visible !important;
     }
 }
