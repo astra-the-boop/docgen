@@ -465,6 +465,23 @@ button.cta {
         visibility: hidden;
     }
 
+    #real-cunt-header{
+        flex-wrap: nowrap;
+        gap: 4cm;
+        display: table;
+    }
+
+    #real-top-left, #real-top-right{
+        display: table-cell;
+        width: 50%;
+        text-align: center;
+        vertical-align: top;
+    }
+
+    #real-title-thing-container, #real-document-type{
+        white-space: nowrap;
+    }
+
     #the-actual-real-legit-thing, #the-actual-real-legit-thing *{
         display: block;
         visibility: visible
