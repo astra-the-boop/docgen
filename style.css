@@ -286,19 +286,20 @@ select{
 #the-actual-real-legit-thing{
     /*display: none;*/
     /*visibility: hidden;*/
-    display: flex;
+    /*display: flex;*/
     font-family: "Times New Roman", times, serif;
     width: 100%;
     background-color: var(--preview-background);
     color: var(--text);
-    margin: auto auto;
     overflow-wrap: break-word;
     word-wrap: break-word;
     background: var(--preview-background);
-    padding: 3rem 2rem;
-    border: 2px solid var(--muted);
+    padding-top: 3rem;
+    padding-bottom: 3rem;
     justify-content: center;
+    margin: 0;
     align-items: center;
+    border: 2px solid var(--muted);
 }
 
 #real-cunt-header{
@@ -309,4 +310,14 @@ select{
     align-items: center;
     text-align: center;
     width: 100%
+}
+
+#real-title-thing-container{
+    width: 100%;
+    margin-top: 5rem;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    margin-left: 0;
+    line-height: 1.7;
 }

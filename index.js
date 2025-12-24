@@ -83,6 +83,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     document.getElementById("jurisdiction").addEventListener('input', () => {
         document.getElementById("jurisdiction-preview").innerText = document.getElementById("jurisdiction").value;
+        document.getElementById('real-jurisdiction').innerText = document.getElementById("jurisdiction").value;
     });
 
     document.getElementById("bottom-row").addEventListener('input', () => {
@@ -94,29 +95,41 @@ document.addEventListener('DOMContentLoaded', () => {
                 month: "long",
                 day: "numeric"
             });
+            document.getElementById("bottomrow-real").innerText = document.getElementById("bottomrow-preview").innerText = date.toLocaleString("en-GB", {
+                weekday: "long",
+                year: "numeric",
+                month: "long",
+                day: "numeric"
+            });
         } else {
             document.getElementById("bottomrow-preview").innerText = document.getElementById("bottom-row").value;
+            document.getElementById("bottomrow-real").innerText = document.getElementById("bottom-row").value;
         }
     });
 
     document.getElementById("document-type").addEventListener('input', () => {
         document.getElementById("doc-type-preview").innerText = document.getElementById("document-type").value.toUpperCase();
+        document.getElementById("real-document-type").innerText = document.getElementById("document-type").value.toUpperCase();
     })
 
     document.getElementById("title").addEventListener('input', () => {
         document.getElementById("title-preview").innerText = `"${document.getElementById("title").value}"`;
+        document.getElementById("real-title").innerText = `"${document.getElementById("title").value}"`;
     })
 
     document.getElementById("authors").addEventListener('input', () => {
         document.getElementById("authors-preview").innerText = document.getElementById("authors").value;
+        document.getElementById("real-authors").innerText = document.getElementById("authors").value;
     })
 
     document.getElementById("secondary-for").addEventListener('input', () => {
         document.getElementById("the-fuckassed-thing").innerText = document.getElementById("secondary-for").value;
+        document.getElementById("real-sec-for").innerText = document.getElementById("secondary-for").value;
     })
 
     document.getElementById("secondary").addEventListener('input', () => {
         document.getElementById("the-other-fuckassed-thing").innerText = document.getElementById("secondary").value;
+        document.getElementById("real-sec").innerText = document.getElementById("secondary").value;
     })
 
     document.getElementById("date-grrr").addEventListener('change', () => {
@@ -127,6 +140,12 @@ document.addEventListener('DOMContentLoaded', () => {
             month: "long",
             day: "numeric"
         });
+        document.getElementById("real-date").innerText = date.toLocaleString("en-GB", {
+            weekday: "long",
+            year: "numeric",
+            month: "long",
+            day: "numeric"
+        })
     })
 
     document.getElementById("hc").addEventListener('change', () => {
