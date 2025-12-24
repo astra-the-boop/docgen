@@ -360,8 +360,8 @@ select{
 }
 
 #the-actual-real-legit-thing{
-    /*display: none;*/
-    /*visibility: hidden;*/
+    display: none;
+    visibility: hidden;
     font-family: "Times New Roman", times, serif;
     width: 100%;
     background-color: var(--preview-background);
