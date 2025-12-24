@@ -10,6 +10,10 @@ marked.setOptions({
     breaks: true
 });
 
+function printTheFucker(){
+    window.print();
+}
+
 function updatePreview(){
     const preview = document.getElementById('preview-box');
 

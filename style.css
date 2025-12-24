@@ -360,7 +360,7 @@ select{
 }
 
 #the-actual-real-legit-thing{
-    display: none;
+    /*display: none;*/
     visibility: hidden;
     font-family: "Times New Roman", times, serif;
     width: 100%;
@@ -461,10 +461,12 @@ button.cta {
 
 @media print{
     body *{
+        display: none;
         visibility: hidden;
     }
 
-    #the-actual-real-legit-thing{
+    #the-actual-real-legit-thing, #the-actual-real-legit-thing *{
+        display: block;
         visibility: visible
     }
 }
